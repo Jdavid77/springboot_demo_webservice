@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import com.educandoweb.course.entities.pk.OrderItemPK;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
@@ -18,7 +19,7 @@ public class OrderItem implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@EmbeddedId
-	private OrderItemPK Id;
+	private OrderItemPK id = new OrderItemPK();
 	
 	private Integer quantity;
 	private Double price;
@@ -31,28 +32,29 @@ public class OrderItem implements Serializable{
 
 	public OrderItem(Order order, Product product, Integer quantity, Double price) {
 		super();
-		Id.setOrder(order);
-		Id.setProduct(product);
+		id.setOrder(order);
+		id.setProduct(product);
 		this.quantity = quantity;
 		this.price = price;
 		
 	}
 
 
+	@JsonIgnore
 	public Order getOrder() {
-		return Id.getOrder();
+		return id.getOrder();
 	}
 	
 	public void setOrder(Order order) {
-		Id.setOrder(order);
+		id.setOrder(order);
 	}
 	
 	public Product getProduct() {
-		return Id.getProduct();
+		return id.getProduct();
 	}
 	
 	public void setProduct(Product product) {
-		Id.setProduct(product);
+		id.setProduct(product);
 	}
 	
 	
@@ -78,7 +80,7 @@ public class OrderItem implements Serializable{
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(Id);
+		return Objects.hash(id);
 	}
 
 
@@ -91,7 +93,7 @@ public class OrderItem implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		OrderItem other = (OrderItem) obj;
-		return Objects.equals(Id, other.Id);
+		return Objects.equals(id, other.id);
 	}
 	
 		
