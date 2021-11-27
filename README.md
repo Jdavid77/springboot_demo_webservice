@@ -17,3 +17,5 @@ Project developed during an Udemy course , to introduce Spring Boot.
 
 ## Domain Model
 
+<img src="assets/Domain Model.png" />
+
