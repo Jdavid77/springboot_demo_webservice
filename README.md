@@ -1,6 +1,6 @@
 # Web Service Project with Spring Boot and JPA / Hibernate
 
-Project developed during an Udemy course , to introduce Spring Boot.
+Project developed during an Udemy course , to introduce Spring Boot and it's basic operations.
 
 ## Main Objectives:
 
@@ -23,5 +23,20 @@ Project developed during an Udemy course , to introduce Spring Boot.
 ## Domain Instance
 
 ![image](https://user-images.githubusercontent.com/49655819/143723026-cd31846c-56b2-4ede-b048-85300444f67e.png)
+
+## Architecture
+
+![image](https://user-images.githubusercontent.com/49655819/143723049-92b538a8-9d1e-4c8f-9ebc-8b73f2076955.png)
+
+
+##
+
+<ul>
+  <li>Java 11</li>
+  <li>Spring Boot</li>
+  <li>H2 Database</li>
+  <li>Postgres SQL</li>
+  <li>Heroku ( for deployment )</li>
+</ul>
 
 
