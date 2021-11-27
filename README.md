@@ -17,9 +17,11 @@ Project developed during an Udemy course , to introduce Spring Boot.
 
 ## Domain Model
 
-<img src="assets/Domain Model.png" />
+![image](https://user-images.githubusercontent.com/49655819/143723015-806bceb7-3269-4f83-8693-c591ced1aa9c.png)
+
 
 ## Domain Instance
 
-<img src="assets/Domain Instance.png" />
+![image](https://user-images.githubusercontent.com/49655819/143723026-cd31846c-56b2-4ede-b048-85300444f67e.png)
+
 
