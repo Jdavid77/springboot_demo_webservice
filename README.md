@@ -29,7 +29,7 @@ Project developed during an Udemy course , to introduce Spring Boot and it's bas
 ![image](https://user-images.githubusercontent.com/49655819/143723049-92b538a8-9d1e-4c8f-9ebc-8b73f2076955.png)
 
 
-##
+## Technologies Used
 
 <ul>
   <li>Java 11</li>
